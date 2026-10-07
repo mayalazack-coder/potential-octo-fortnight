@@ -2,305 +2,147 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="ZDM Brico - Maintenance bâtiment et syndic en RDC">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+content="ZDM Brico - Maintenance bâtiment, plomberie, électricité, hydraulique, piscine, assainissement et syndic en RDC">
+
 <title>ZDM Brico | Maintenance bâtiment & Syndic</title>
 
 <style>
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
 body{
- margin:0;
- font-family:Arial,sans-serif;
- background:#f5f7fa;
- color:#102a43;
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f4f7fb;
+  color:#102a43;
+  line-height:1.6;
 }
+
 header{
- background:#062b5c;
- color:white;
- padding:15px;
- position:sticky;
- top:0;
- z-index:10;
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:#062b5c;
+  color:white;
+  padding:14px 18px;
+  box-shadow:0 3px 12px rgba(0,0,0,.25);
 }
-nav{
- max-width:1100px;
- margin:auto;
- display:flex;
- justify-content:space-between;
- align-items:center;
- gap:10px;
+
+.nav{
+  max-width:1100px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
 }
+
 .logo{
- height:55px;
- max-width:180px;
- object-fit:contain;
+  font-size:24px;
+  font-weight:900;
 }
+
+.logo span{
+  color:#ff7900;
+}
+
 nav a{
- color:white;
- text-decoration:none;
- margin:5px;
- font-weight:bold;
+  color:white;
+  text-decoration:none;
+  margin-left:14px;
+  font-weight:bold;
 }
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:20px;
+}
+
 .hero{
- background:linear-gradient(135deg,#062b5c,#0d477e);
- color:white;
- text-align:center;
- padding:45px 20px;
+  background:linear-gradient(135deg,#062b5c,#0b4c91);
+  color:white;
+  padding:55px 20px;
+  text-align:center;
 }
-.hero h1{font-size:38px;margin:10px 0}
-.hero p{font-size:19px}
+
+.hero h1{
+  font-size:38px;
+  margin:0 0 15px;
+}
+
+.hero p{
+  font-size:19px;
+  max-width:750px;
+  margin:0 auto 25px;
+}
+
 .btn{
- display:inline-block;
- background:#ff7900;
- color:white;
- padding:13px 22px;
- border-radius:8px;
- text-decoration:none;
- font-weight:bold;
- border:0;
+  display:inline-block;
+  background:#ff7900;
+  color:white;
+  text-decoration:none;
+  border:0;
+  border-radius:10px;
+  padding:14px 22px;
+  font-weight:bold;
+  cursor:pointer;
 }
+
+.btn.blue{
+  background:#062b5c;
+}
+
 section{
- max-width:1100px;
- margin:auto;
- padding:45px 18px;
+  padding:25px 0;
 }
+
 h2{
- text-align:center;
- color:#062b5c;
- font-size:30px;
+  color:#062b5c;
+  font-size:28px;
+  text-align:center;
+  margin-bottom:25px;
 }
+
 .grid{
- display:grid;
- grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
- gap:18px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:16px;
 }
+
 .card{
- background:white;
- padding:22px;
- border-radius:12px;
- box-shadow:0 3px 12px #0001;
+  background:white;
+  padding:20px;
+  border-radius:15px;
+  box-shadow:0 4px 15px rgba(0,0,0,.08);
+  border-top:5px solid #ff7900;
 }
-.card h3{color:#f27600}
+
+.card h3{
+  color:#062b5c;
+  margin-top:0;
+}
+
 .gallery{
- display:grid;
- grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
- gap:15px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:16px;
 }
-.gallery img{
- width:100%;
- height:220px;
- object-fit:cover;
- border-radius:12px;
+
+.photo{
+  background:white;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0 4px 15px rgba(0,0,0,.08);
 }
-form{
- max-width:650px;
- margin:auto;
- background:white;
- padding:25px;
- border-radius:12px;
- box-shadow:0 3px 12px #0001;
-}
-input,select,textarea{
- width:100%;
- padding:13px;
- margin:8px 0 15px;
- border:1px solid #ccc;
- border-radius:7px;
- font-size:16px;
-}
-textarea{min-height:110px}
-button{cursor:pointer}
-.contact{
- text-align:center;
- background:#062b5c;
- color:white;
-}
-.contact a{color:#ff9b3d}
-footer{
- background:#041d3d;
- color:white;
- text-align:center;
- padding:22px;
-}
-@media(max-width:600px){
- nav{flex-direction:column}
- nav a{font-size:14px}
- .hero h1{font-size:29px}
-}
-</style>
-</head>
 
-<body>
-
-<header>
-<nav>
-<img class="logo"
-src="ZDM_images_optimisees/zdm_logo.jpg"
-alt="ZDM Brico">
-<div>
-<a href="#services">Services</a>
-<a href="#photos">Réalisations</a>
-<a href="#demande">Demande</a>
-<a href="#contact">Contact</a>
-</div>
-</nav>
-</header>
-
-<section class="hero">
-<h1>ZDM BRICO</h1>
-<p>Votre partenaire en maintenance bâtiment et syndic</p>
-<p><b>Zèle dans le travail • Durabilité de nos ouvrages • Maîtrise de chaque détail</b></p>
-<a class="btn" href="#demande">Demander une intervention</a>
-</section>
-
-<section id="services">
-<h2>Nos services</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>🔧 Maintenance bâtiment</h3>
-<p>Entretien, réparation, dépannage et suivi des bâtiments.</p>
-</div>
-
-<div class="card">
-<h3>🚰 Plomberie</h3>
-<p>Installation, réparation, recherche de fuite et entretien.</p>
-</div>
-
-<div class="card">
-<h3>⚡ Électricité</h3>
-<p>Installation, dépannage et maintenance électrique.</p>
-</div>
-
-<div class="card">
-<h3>🏗️ Travaux généraux</h3>
-<p>Rénovation, aménagement et petits travaux de construction.</p>
-</div>
-
-<div class="card">
-<h3>🏢 Syndic</h3>
-<p>Suivi des immeubles, parties communes et travaux.</p>
-</div>
-
-<div class="card">
-<h3>💧 Hydraulique & assainissement</h3>
-<p>Pompes, réseaux d'eau, drainage et assainissement.</p>
-</div>
-
-<div class="card">
-<h3>🏊 Piscines</h3>
-<p>Installation, entretien et maintenance des équipements.</p>
-</div>
-
-</div>
-</section>
-
-<section id="photos">
-<h2>Nos réalisations</h2>
-
-<div class="gallery">
-
-<img src="ZDM_images_optimisees/zdm_affiche_maintenance.jpg"
-alt="ZDM Brico maintenance">
-
-<img src="ZDM_images_optimisees/zdm_affiche_tarifs.jpg"
-alt="Tarifs ZDM Brico">
-
-<img src="ZDM_images_optimisees/zdm_carte_presentation.jpg"
-alt="Présentation ZDM Brico">
-
-<img src="ZDM_images_optimisees/zdm_photo_travail.jpg"
-alt="Travail ZDM Brico">
-
-</div>
-</section>
-
-<section id="demande">
-<h2>Demander une intervention</h2>
-
-<form onsubmit="envoyer(event)">
-
-<label>Nom complet</label>
-<input id="nom" required>
-
-<label>Téléphone / WhatsApp</label>
-<input id="telephone" type="tel" required>
-
-<label>Service demandé</label>
-<select id="service" required>
-<option value="">Choisir un service</option>
-<option>Plomberie</option>
-<option>Électricité</option>
-<option>Maintenance bâtiment</option>
-<option>Hydraulique</option>
-<option>Piscine</option>
-<option>Assainissement</option>
-<option>Syndic</option>
-<option>Travaux généraux</option>
-</select>
-
-<label>Adresse d'intervention</label>
-<input id="adresse" required>
-
-<label>Décrivez votre besoin</label>
-<textarea id="message" required></textarea>
-
-<button class="btn" type="submit">
-Envoyer sur WhatsApp
-</button>
-
-</form>
-</section>
-
-<section id="contact" class="contact">
-<h2 style="color:white">Contact ZDM Brico</h2>
-
-<p>📞 <a href="tel:+243895894251">+243 895 894 251</a></p>
-<p>💬 <a href="https://wa.me/243895894251">WhatsApp</a></p>
-<p>📧 <a href="mailto:ZDMBRICO@gmail.com">ZDMBRICO@gmail.com</a></p>
-<p>📍 Matete, Anunga 52B – Kinshasa, RDC</p>
-<p>▶️ ZDM brico</p>
-
-<p><b>De Kinshasa à Lubumbashi et partout en RDC selon les besoins.</b></p>
-</section>
-
-<footer>
-ZDM Brico © 2026<br>
-Zèle dans le travail • Durabilité de nos ouvrages • Maîtrise de chaque détail
-</footer>
-
-<script>
-function envoyer(e){
- e.preventDefault();
-
- let nom=document.getElementById("nom").value;
- let telephone=document.getElementById("telephone").value;
- let service=document.getElementById("service").value;
- let adresse=document.getElementById("adresse").value;
- let message=document.getElementById("message").value;
-
- let texte=
- "Bonjour ZDM Brico,%0A%0A"+
- "Nom : "+nom+
- "%0ATéléphone : "+telephone+
- "%0AService : "+service+
- "%0AAdresse : "+adresse+
- "%0ABesoin : "+message;
-
- window.location.href=
- "https://wa.me/243895894251?text="+
- encodeURIComponent(
- "Bonjour ZDM Brico,\n\n"+
- "Nom : "+nom+
- "\nTéléphone : "+telephone+
- "\nService : "+service+
- "\nAdresse : "+adresse+
- "\nBesoin : "+message
- );
-}
-</script>
-
-</body>
-</html>
+.photo-box{
+  height:220px;
+ 
